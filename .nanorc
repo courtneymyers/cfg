@@ -1,0 +1,9 @@
+## include syntax highlighting from .nanorc files
+include /usr/local/share/nano/*.nanorc
+
+## apply formatting options
+set autoindent
+set whitespace "»·"
+
+## allow multiple files to be open at the same time
+set multibuffer
