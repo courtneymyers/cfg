@@ -14,3 +14,6 @@ alias ....='cd ../../..'
 # common directories
 alias sites='cd ~/Sites/'
 alias projects='cd ~/Projects/'
+
+# show preview window with fzf
+alias fzf='fzf --border --reverse --height 50% --preview "head -100 {}"'
