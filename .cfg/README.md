@@ -20,3 +20,6 @@ Dotfiles are created in their normal place: the home directory, instead of savin
   ```
   cfg config --local status.showUntrackedFiles no
   ```
+
+## Notes
+`.bashrc` reads in private info is saved in env variables in a file saved as `~/.cfg/.secret`, which isn’t included in this repo.

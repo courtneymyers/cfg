@@ -1,0 +1,10 @@
+[user]
+	name = Courtney Myers
+	email = courtney.aaron.myers@gmail.com
+[alias]
+	lgs = log --color --graph --pretty=format:'%C(cyan)%h%Creset :%C(yellow)%d%Creset %s %C(green)(%cr) %C(magenta)%an'
+	lgl = log --graph --decorate --abbrev-commit --all
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
