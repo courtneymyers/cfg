@@ -15,9 +15,9 @@ Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'vim-syntastic/syntastic'
 Plug 'sheerun/vim-polyglot'
+Plug '/usr/local/opt/fzf'
 call plug#end()
 
 " Configure lightline plugin to display current git branch via fugitive plugin
