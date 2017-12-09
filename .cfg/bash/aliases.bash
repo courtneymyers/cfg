@@ -7,7 +7,7 @@ alias ....='cd ../../..'
 
 # common directories
 alias sites='cd ~/Sites/'
-alias projects='cd ~/Projects/'
+alias pro='cd ~/Projects/'
 
 # better directory listing
 alias ll='ls -lahG'
