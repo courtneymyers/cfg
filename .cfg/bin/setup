@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# install homebrew brews
+brew install nano
+brew install wget
+brew install tree
+brew install fzf
+brew install jq
+brew install z
+
+brew install rbenv
+brew install pyenv
+brew install jenv
+brew install leiningen
+brew install haskell-stack
+brew install homebrew/php/php-version
+
+brew install mongodb
+brew install redis
+
+brew install heroku/brew/heroku
+brew install cloudfoundry/tap/cf-cli
+brew install bash-git-prompt
