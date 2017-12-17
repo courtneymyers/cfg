@@ -4,6 +4,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install homebrew brews
+brew install nvim
 brew install nano
 brew install wget
 brew install tree
@@ -24,3 +25,7 @@ brew install redis
 brew install heroku/brew/heroku
 brew install cloudfoundry/tap/cf-cli
 brew install bash-git-prompt
+
+# install homebrew casks
+brew cask install virtualbox
+brew cask install vagrant
