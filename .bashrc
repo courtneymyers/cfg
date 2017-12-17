@@ -16,6 +16,9 @@ source ~/.cfg/bash/aliases.bash
 # source custom functions
 source ~/.cfg/bash/functions.bash
 
+# source custom fzf functions
+source ~/.cfg/bash/fzf-functions.bash
+
 # source language version managers (rbenv, pyenv, jenv, php-version, n)
 source ~/.cfg/bash/languages.bash
 
