@@ -123,6 +123,8 @@ set tabstop=4
 if has("autocmd")
   " Enable filetype detection
   filetype plugin on
+
+  " Enable omnicompletion
   set omnifunc=syntaxcomplete#Complete
 
   " Strict language specific indentation settings
