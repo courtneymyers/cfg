@@ -122,7 +122,8 @@ set tabstop=4
 " If Vim was compiled with autocommands
 if has("autocmd")
   " Enable filetype detection
-  filetype on
+  filetype plugin on
+  set omnifunc=syntaxcomplete#Complete
 
   " Strict language specific indentation settings
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
@@ -163,6 +164,9 @@ set statusline+=/             " /
 set statusline+=\             " (space)
 set statusline+=%L            " Total lines
 set statusline+=\             " (space)
+
+" Display typed characters in the status line
+" set showcmd
 
 " Show title in terminal window
 set title
