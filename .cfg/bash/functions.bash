@@ -23,13 +23,13 @@ o() {
 }
 
 # ------------------------------------------------------------------------------
-# open current directory or given file in Vim
+# open current directory or given file in Neovim
 # ------------------------------------------------------------------------------
 v() {
   if [ $# -eq 0 ]; then
-    vim .;
+    nvim .;
   else
-    vim "$@";
+    nvim "$@";
   fi;
 }
 
