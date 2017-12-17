@@ -145,6 +145,12 @@ set smartindent
 " Always show the status line
 set laststatus=2
 
+" Vertical split window down
+set splitbelow
+
+" Horizontal split window right
+set splitright
+
 " Format the status line
 set statusline=\              " (space)
 set statusline+=%F            " Full path to file
@@ -161,6 +167,9 @@ set statusline+=\             " (space)
 " Show title in terminal window
 set title
 
+" Clear terminal title upon exiting Vim
+set titleold=
+
 " Show line numbers
 set number
 
@@ -175,7 +184,10 @@ set list
 nmap <leader>l :set list!<CR>
 
 " Enable spell checking
-set spell
+" set spell
+
+" Enable completion for words as well, but only if spelling is enabled
+set complete+=kspell
 
 " Enable mouse (easier scrolling)
 set mouse=a
