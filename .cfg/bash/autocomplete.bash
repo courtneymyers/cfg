@@ -11,3 +11,8 @@ _pip_completion()
                    PIP_AUTO_COMPLETE=1 $1 ) )
 }
 complete -o default -F _pip_completion pip
+
+# enable autocompletion from files in bash_completion.d directory
+for file in /usr/local/etc/bash_completion.d/* ; do
+  source $file
+done
