@@ -12,13 +12,13 @@ mcd () {
 }
 
 # ------------------------------------------------------------------------------
-# open current directory or given file in Finder
+# open current directory or given file in Oni
 # ------------------------------------------------------------------------------
 o() {
   if [ $# -eq 0 ]; then
-    open .;
+    oni .;
   else
-    open "$@";
+    oni "$@";
   fi;
 }
 
