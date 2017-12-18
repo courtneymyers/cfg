@@ -59,7 +59,7 @@ set nobackup
 set nowb
 
 " Set number of lines above and below the cursor
-set scrolloff=100
+set scrolloff=1
 
 " Enable the wildmenu (shown in tab completion)
 set wildmenu
