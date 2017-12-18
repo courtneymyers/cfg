@@ -13,5 +13,6 @@ module.exports = {
   "editor.fontSize": "13px",
   "editor.fontFamily": "FiraCode-Light",
   "editor.linePadding": 3,
+  "editor.maximizeScreenOnStart": true,
   "statusbar.enabled": false,
 };
