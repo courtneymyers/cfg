@@ -30,3 +30,5 @@ brew install bash-git-prompt
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install oni
+
+brew cask divvy
