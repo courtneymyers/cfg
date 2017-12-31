@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# install homebrew
+# --- install homebrew ---
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install homebrew brews
@@ -29,6 +29,35 @@ brew install bash-git-prompt
 # install homebrew casks
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install oni
 
-brew cask divvy
+brew cask install hyper
+brew cask install oni
+brew cask install atom
+
+brew cask install divvy
+
+
+
+# --- install n and node versions ---
+curl -L https://git.io/n-install | N_PREFIX=~/Utilities/n bash
+n 4.8.7   # last release of Argon (LTS 4)
+n 6.12.2  # last release of Boron (LTS 6)
+n lts     # latest release of Carbon (LTS 8)
+n latest  # latest current release
+
+
+
+# --- install python versions ---
+pyenv global 3.6.0 2.7.13
+
+# install global python packages ('--user' installs to ~/.local/bin)
+pip install --user pipenv
+pip install --user pipdeptree
+
+# intall python virtual environments with python packages
+virtualenv ~/.local/share/virtualenvs/aws-shell
+cd ~/.local/share/virtualenvs/aws-shell
+source bin/activate
+pip install aws-shell
+deactivate
+cd
