@@ -61,3 +61,10 @@ source bin/activate
 pip install aws-shell
 deactivate
 cd
+
+virtualenv ~/.local/share/virtualenvs/ansible
+cd ~/.local/share/virtualenvs/ansible
+source bin/activate
+pip install ansible
+deactivate
+cd
