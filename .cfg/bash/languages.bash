@@ -12,5 +12,6 @@ eval "$(jenv init -)"
 # enable php-version
 source $(brew --prefix php-version)/php-version.sh && php-version 7
 
-# enable n (for node)
-export N_PREFIX="$HOME/Utilities/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
+# enable n (node)
+export N_PREFIX="$HOME/Utilities/n";
+[[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
