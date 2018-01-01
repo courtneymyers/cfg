@@ -52,3 +52,10 @@ list() {
   tree -aC -I '.git|node_modules' --dirsfirst "$@" |
     less --quit-if-one-screen --RAW-CONTROL-CHARS --no-init --line-numbers;
 }
+
+# ------------------------------------------------------------------------------
+# install python package globally (since we've disabled it outside virtualenvs)
+# ------------------------------------------------------------------------------
+gpip() {
+  PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
