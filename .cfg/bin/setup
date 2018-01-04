@@ -52,6 +52,7 @@ pyenv global 3.6.0 2.7.13
 
 # install global python packages ('--user' installs to ~/.local/bin)
 pip install --user pipenv
+pip install --user autopep8
 pip install --user pipdeptree
 
 # intall python virtual environments with python packages
