@@ -53,9 +53,9 @@ pyenv install 3.6.4
 pyenv global 2.7.14 3.6.4
 
 # install global python packages ('--user' installs to ~/.local/bin)
-pip install --user pipenv
-pip install --user autopep8
-pip install --user pipdeptree
+gpip install --user pipenv
+gpip install --user autopep8
+gpip install --user pipdeptree
 
 # intall python virtual environments with python packages
 virtualenv ~/.local/share/virtualenvs/aws-shell
