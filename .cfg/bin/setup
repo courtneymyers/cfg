@@ -48,7 +48,7 @@ n latest  # latest current release
 
 
 # --- install python versions ---
-pyenv global 3.6.0 2.7.13
+pyenv global 3.6.4 2.7.14
 
 # install global python packages ('--user' installs to ~/.local/bin)
 pip install --user pipenv
