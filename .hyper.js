@@ -117,8 +117,7 @@ module.exports = {
     'hyper-statusline',
     'hyperterm-overlay',
     'hyperterm-atom-dark',
-    "hyper-tabs-enhanced",
-    // "hyper-simple-vibrancy"
+    "hyper-tabs-enhanced"
   ],
 
   // in development, you can create a directory under
