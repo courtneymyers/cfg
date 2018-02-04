@@ -8,6 +8,7 @@ alias ....='cd ../../..'
 # common directories
 alias sites='cd ~/Sites/'
 alias pro='cd ~/Projects/'
+alias venv='cd ~/.local/share/virtualenvs/'
 
 # better directory listing
 alias ll='ls -lahG'
