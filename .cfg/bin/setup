@@ -4,6 +4,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install homebrew brews
+brew install tmux
 brew install nvim
 brew install nano
 brew install wget
@@ -45,11 +46,15 @@ n 6.12.2  # last release of Boron (LTS 6)
 n lts     # latest release of Carbon (LTS 8)
 n latest  # latest current release
 
+# install global node packages
+npm i -g vtop
+
 
 
 # --- install python versions ---
 pyenv install 2.7.14
 pyenv install 3.6.4
+pyenv install anaconda3-5.0.1
 pyenv global 2.7.14 3.6.4
 
 # install global python packages ('--user' installs to ~/.local/bin)
@@ -58,6 +63,13 @@ gpip install --user autopep8
 gpip install --user pipdeptree
 
 # intall python virtual environments with python packages
+virtualenv ~/.local/share/virtualenvs/jupyter
+cd ~/.local/share/virtualenvs/jupyter
+source bin/activate
+pip install jupyter
+deactivate
+cd
+
 virtualenv ~/.local/share/virtualenvs/aws-shell
 cd ~/.local/share/virtualenvs/aws-shell
 source bin/activate
