@@ -39,6 +39,11 @@ brew cask install divvy
 
 
 
+# --- install tmux plugin manager ---
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
+
 # --- install n and node versions ---
 curl -L https://git.io/n-install | N_PREFIX=~/Utilities/n bash
 n 4.8.7   # last release of Argon (LTS 4)
