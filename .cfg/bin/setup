@@ -36,6 +36,8 @@ brew cask install oni
 brew cask install atom
 
 brew cask install divvy
+brew cask install vlc
+brew cask install kap
 
 
 
