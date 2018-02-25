@@ -34,6 +34,8 @@ brew cask install vagrant
 brew cask install hyper
 brew cask install oni
 brew cask install atom
+brew cask install visual-studio-code
+brew cask install jetbrains-toolbox
 
 brew cask install divvy
 brew cask install vlc
