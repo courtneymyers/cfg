@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# start dockerized ethereum node
+docker run \
+  --name ethereum-node \
+  --mount type=bind,source=$HOME/.ethereum,target=/root/.ethereum \
+  --publish 8545:8545 \
+  --publish 30303:30303 \
+  ethereum/client-go;

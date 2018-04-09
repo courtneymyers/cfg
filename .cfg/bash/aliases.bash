@@ -18,3 +18,7 @@ alias grep='grep --color=auto'
 
 # show preview window with fzf
 alias fzf='fzf --border --reverse --height 50% --preview "head -100 {}"'
+
+# ----- shell scripts -----
+# start dockerized ethereum node
+alias ethereum='~/.cfg/bin/ethereum'
