@@ -1,9 +1,13 @@
 #!/bin/sh
 
-# start dockerized ethereum node
+# start dockerized ethereum node in light sync mode
 docker run \
+  --interactive \
+  --tty \
   --name ethereum-node \
   --mount type=bind,source=$HOME/.ethereum,target=/root/.ethereum \
   --publish 8545:8545 \
   --publish 30303:30303 \
-  ethereum/client-go;
+  ethereum/client-go \
+  --syncmode=light \
+  --cache=4096;
