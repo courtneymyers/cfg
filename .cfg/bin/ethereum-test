@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# start dockerized ethereum node (local ethereum testnet)
+command=(docker run \
+  --interactive \
+  --tty \
+  --name ethereum-test \
+  --mount type=bind,source=$HOME/.ethereum-test,target=/root/.ethereum \
+  --publish 8545:8545 \
+  --publish 30303:30303 \
+  ethereum/client-go \
+  --identity "EthereumTestNode" \
+  --networkid 540 \
+  --maxpeers 0 \
+  --nodiscover \
+  --cache=4096 \
+);
+
+# if 'init' argument is passed, initialize with genesis block
+if [ $# -eq 1 ]; then
+  if [ $1 == "init" ]; then
+    command+=(init /root/.ethereum/genesis.json)
+  fi
+fi
+
+# run command
+"${command[@]}"

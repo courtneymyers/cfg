@@ -20,5 +20,9 @@ alias grep='grep --color=auto'
 alias fzf='fzf --border --reverse --height 50% --preview "head -100 {}"'
 
 # ----- shell scripts -----
-# start dockerized ethereum node
-alias ethereum='~/.cfg/bin/ethereum'
+# start dockerized ethereum node (main network)
+alias eth-main='~/.cfg/bin/ethereum-main'
+
+# start dockerized ethereum node (local testnet)
+# pass 'init' argument to initialize with genesis block: eth-test init
+alias eth-test='~/.cfg/bin/ethereum-test'
