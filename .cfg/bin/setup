@@ -62,6 +62,13 @@ npm i -g vtop
 
 
 
+# --- install composer and global php packages ---
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+php -r "unlink('composer-setup.php');"
+
+
+
 # --- install python versions ---
 pyenv install 2.7.14
 pyenv install 3.6.4
