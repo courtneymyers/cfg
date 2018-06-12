@@ -26,3 +26,6 @@ alias eth-main='~/.cfg/bin/ethereum-main'
 # start dockerized ethereum node (local testnet)
 # pass 'init' argument to initialize with genesis block: eth-test init
 alias eth-test='~/.cfg/bin/ethereum-test'
+
+# start dockerized eosio dev node
+alias eos-dev='~/.cfg/bin/eosio-dev'
