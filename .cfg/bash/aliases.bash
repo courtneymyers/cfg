@@ -27,5 +27,6 @@ alias eth-main='~/.cfg/bin/ethereum-main'
 # pass 'init' argument to initialize with genesis block: eth-test init
 alias eth-test='~/.cfg/bin/ethereum-test'
 
-# start dockerized eosio dev node
+# start dockerized eosio dev node and alias cleos from inside container
 alias eos-dev='~/.cfg/bin/eosio-dev'
+alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhost:8888'

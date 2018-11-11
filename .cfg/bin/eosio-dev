@@ -5,8 +5,8 @@ docker run \
   --publish 8888:8888 \
   --publish 9876:9876 \
   --volume /tmp/work:/work \
-  --volume /tmp/eosio/data:/mnt/dev/data \
-  --volume /tmp/eosio/config:/mnt/dev/config \
+  --volume $HOME/.eosio-dev/data:/mnt/dev/data \
+  --volume $HOME/.eosio-dev/config:/mnt/dev/config \
   --rm \
   --detach \
   eosio/eos-dev \
