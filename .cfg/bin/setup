@@ -18,7 +18,6 @@ brew install pyenv
 brew install jenv
 brew install leiningen
 brew install haskell-stack
-brew install homebrew/php/php-version
 
 brew install mongodb
 brew install redis
